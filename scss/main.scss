@@ -1,0 +1,56 @@
+@import "./general";
+@import "./header";
+@import "./footer";
+section.landing{
+    height: calc(100vh - 77px);
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.places{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .container{
+        .row{
+            div{
+                div{
+                    height: 250px;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.2);
+                    }
+                    &.one{
+                        background-image: url(../images/asset\ 2.jpeg);
+                    }
+                    &.two{
+                        background-image: url(../images/Marsa\ alam\ Snorkeling.jpg);
+                    }
+                    &.three{
+                        background-image: url(../images/sharm.jpg);
+                    }
+                    &.four{
+                        background-image: url(../images/taba.jpg);
+                    }
+                    &.five{
+                        background-image: url(../images/giza.jpg);
+                    }
+                    &.six{
+                        background-image: url(../images/luxor.jpg);
+                    }
+                    &.seven{
+                        background-image: url(../images/aswan.jpg);
+                    }
+                }
+            }
+        }
+    }
+}
